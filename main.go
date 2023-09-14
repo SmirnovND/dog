@@ -28,5 +28,5 @@ func (d *Dog) GetPassportId() int {
 }
 
 func main() {
-	printer.PrintDogProfile(&Dog{Name: "John", Color: "White"})
+	printer.PrintDogProfile(&Dog{Name: "John", Color: "White", PassportId: 123, Owner: "John"})
 }
