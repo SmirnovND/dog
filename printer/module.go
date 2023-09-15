@@ -13,6 +13,6 @@ type DogPrinterInterfaces interface {
 
 // хотел бы тут принимать dog DogPrinterInterfaces и не зависеть от вложенного стека
 func PrintDogProfile(dog logger.DogLoggerInterfaces) {
-	fmt.Println(formater.GetNameFormat(dog), formater.GetColorFormat(dog))
+	fmt.Println(formater.GetNameFormat(dog.GetName()), formater.GetColorFormat(dog.GetColor()))
 	logger.WriteLog(dog)
 }
